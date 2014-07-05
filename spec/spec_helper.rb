@@ -16,3 +16,4 @@ RSpec.configure do |config|
 end
 
 require 'strong_password'
+require 'factories'

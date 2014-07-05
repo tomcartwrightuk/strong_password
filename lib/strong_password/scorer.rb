@@ -1,4 +1,4 @@
-class AttributeFinder
+class Scorer
 
   attr_reader :attributes
 
@@ -6,10 +6,12 @@ class AttributeFinder
     @attributes = attributes
   end
 
-  def find_attributes(password)
+  def get_score(password)
     matching_attr = []
     attributes.each do |attr|
-      matching_attr.push(attr) if attr[:regex].match(password)
+      attr.score_pw(password)
     end
+    attributes.map{ |attr| attr.score }.reduce(:+)
   end
+
 end

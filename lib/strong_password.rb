@@ -1,1 +1,2 @@
-require 'strong_password/attribute_finder'
+require 'strong_password/scorer'
+require 'strong_password/attribute'
