@@ -1,0 +1,24 @@
+{
+  "attributes": [
+    {
+      "text": "Length of password",
+      "regex": ".+"
+    },
+    {
+      "text": "Numbers",
+      "regex": "[0-9]"
+    },
+    {
+      "text": "Upper case letters",
+      "regex": "[A-Z]"
+    },
+    {
+      "text": "Lower case letters",
+      "regex": "[a-z]"
+    },
+    {
+      "text": "Symbols",
+      "regex": "\W"
+    }
+  ]
+}
