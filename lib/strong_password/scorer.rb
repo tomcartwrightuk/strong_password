@@ -2,7 +2,7 @@ class Scorer
 
   attr_reader :attributes
 
-  def initialize(attributes, options = {})
+  def initialize(attributes = AttributeLoader.new.attributes, options = {})
     @attributes = attributes
   end
 

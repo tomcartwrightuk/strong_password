@@ -1,3 +1,3 @@
 # Strong password
 
-When this complete, instructions on use and installation will appear here.
+To use, run `./bin/strong_password <password>` to obtain a score for your password.
